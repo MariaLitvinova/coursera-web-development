@@ -48,6 +48,7 @@ section {
 .section-content {
   position: relative;
   float: left;
+  padding: 10px
 }
 
 .row {
