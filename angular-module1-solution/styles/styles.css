@@ -1,0 +1,16 @@
+#main-message {
+    font-size: large;
+}
+
+#message-note {
+    font-size: small;
+    font-weight: lighter;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
