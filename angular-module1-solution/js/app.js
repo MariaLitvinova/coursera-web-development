@@ -7,9 +7,15 @@
             $scope.itemsForLunch = "";
             $scope.message = "";
 
-            $scope.calculateIfTooMuch= function() {
+            $scope.calculateIfTooMuch = function() {
+                if ($scope.itemsForLunch === "") {
+                    $scope.message = "Please enter data first!";
+                    return;
+                }
+                
                 var totalAmountOfElements = $scope.itemsForLunch
                     .split(',')
+                    .filter(x => x.length > 0)
                     .length;
 
                 if (totalAmountOfElements > 3) {
